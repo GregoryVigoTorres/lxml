@@ -4,8 +4,8 @@ API Reference
 .. toctree::
     :glob:
 
-    api_source/*
-    api_source/isoschematron/isoschematron
+    api_reference/*
+    api_reference/isoschematron/isoschematron
 
 
 lxml.html
@@ -14,7 +14,7 @@ lxml.html
 .. toctree::
     :glob:
 
-    api_source/html/*
+    api_reference/html/*
 
 
 lxml.tests
@@ -23,4 +23,4 @@ lxml.tests
 .. toctree::
     :glob:
 
-    api_source/tests/*
+    api_reference/tests/*
