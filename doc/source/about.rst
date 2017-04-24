@@ -46,7 +46,9 @@ Documentation
 -------------
 
 .. The complete lxml documentation is available for download as `PDF documentation`_.
+
 The HTML documentation from this web site is part of the normal `source download <#download>`_.
+
 
 * Tutorials:
 
@@ -278,3 +280,5 @@ See the websites of lxml
 .. _`changes for 3.6.2`: /changes-3.6.2.html
 .. _`changes for 3.6.1`: /changes-3.6.1.html
 .. _`changes for 3.6.0`: /changes-3.6.0.html
+
+
