@@ -47,8 +47,6 @@ If you are using lxml for your work and feel like giving a bit of your own benef
 
     `Donate <https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R56JE3VCPDA9N>`_
 
-    .. image:: _static/images/paypal_btn_donateCC_LG.png
-
 
 Please **contact Stefan Behnel** for other ways to support the lxml project, as well as commercial consulting, customisations and trainings on lxml and fast Python XML processing.
 
