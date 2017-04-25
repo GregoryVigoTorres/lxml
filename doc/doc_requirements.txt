@@ -1,0 +1,6 @@
+sphinx>=1.5.4
+beautifulsoup4
+html5lib
+cssselect
+git+git://github.com/GregoryVigoTorres/lxml_rtd_sphinx_theme.git
+
