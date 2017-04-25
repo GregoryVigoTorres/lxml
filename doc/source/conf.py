@@ -1,23 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import glob
 import os
 import sys
 
 import lxml_rtd_sphinx_theme
 
-ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-BUILD_ROOT = os.path.join(ROOT, 'build')
+# sys.path manipulation
+# lxml must be built inplace
+# for relative imports and API/Test to work
+# i.e. the .so files need to be in lxml/src dir
 
-BUILD_DIR = [i for i in os.listdir(BUILD_ROOT) if i.startswith('lib')]
-if not BUILD_DIR:
-    BUILD_DIR = os.path.join(ROOT, 'src')
-else:
-    BUILD_DIR = BUILD_DIR[0]
+ROOT = os.path.dirname(
+    os.path.dirname(
+        os.path.dirname(
+            os.path.abspath(__file__)
+        )
+    )
+)
 
-assert os.path.exists(BUILD_DIR)
-sys.path.insert(0, BUILD_DIR)
+LXML_DIR = os.path.join(ROOT, 'src')
+assert os.path.exists(LXML_DIR)
+sys.path.insert(0, LXML_DIR)
 
 # -- General configuration ------------------------------------------------
 extensions = ['sphinx.ext.ifconfig', 'sphinx.ext.autodoc']
