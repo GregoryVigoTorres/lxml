@@ -8,7 +8,12 @@ html element trees.  This module uses camelCase as it follows the
 html5lib style guide.
 """
 
-from html5lib.treebuilders import _base, etree as etree_builders
+try:
+    from html5lib.treebuilders import _base, etree as etree_builders
+except ImportError as E:
+    from html5lib.treebuilders import base as _base
+    from html5lib.treebuilders import etree as etree_builders
+
 from lxml import html, etree
 
 
